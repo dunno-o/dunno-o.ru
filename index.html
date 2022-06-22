@@ -1,4 +1,5 @@
-<!doctype html5>
+
+<!doctype html>
 <html>
 <head>
     <title>Artem Parfenov</title>
@@ -7,7 +8,6 @@
     <meta charset="utf-8"> 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
     <style>
         @font-face {
             font-family: 'Garamond';
@@ -33,171 +33,24 @@
             padding-right: 100px;
             width: 725px;
         }
-        #cv {
+        #links {
             float: left;
         }
-        #cv a {
+        #links a {
             display: block;
             text-align: right;
         }
-        *{
-            margin: 0pt;
-            padding: 0pt;
-            font-family: "Helvetica Neue", sans-serif;
+        #content a {
+            color: #1a0dab;
+            font-weight: normal;
         }
-
-        .header {
-            position: fixed;
-            width: 100%;
-            max-width: 100%;
-            height: 10%;
-            min-height: 10%;
-            margin-top: 0pt;
-            margin-bottom: 0pt;
-            padding-left: 10%;
-            left: 0;
-            top: 0;
-            background-color: #fff;
-        }
-
-        .footer {
-            width: 100%;
-            max-width: 100%;
-            padding-left: 10%;
-            margin-top: 10%;
-        }
-
-        a {
-            color: #333;
-        }
-
-        .links-container {
-            display: inline-block;
-            position: relative;
-            vertical-align: middle;
-            float: right;
-            padding-top: 5%;
-            height: 100pt;
-            min-height: 100pt;
-        }
-        hr {
-            color: #4682b4;
-
-        }
-
-        #links {
-            position: relative;
-            vertical-align: middle;
-            width: 100pt;
-            font-size: 24pt;
-            height: 100pt;
-            text-align: center;
-        }
-
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-        }
-        .content {
-            flex: 1 0 auto;
-            width: 80%;
-            max-width: 80%;
-            margin-left: 10%;
-            margin-right: 10%;
-            margin-top: 10%;
-            margin-bottom: 0;
+        #content {
             padding: 0;
-            color: #123411;
-            font-size: 14pt;
-        }
-
-        .footer {
-            height: 30%;
-            min-height: 30%;
-            flex: 0 0 auto;
-            background-color: #ddd;
-            padding-bottom:1%;
-            padding-top:1%;
-        }
-
-        h1 {
-            text-align: center;
-            padding: 15% 0 15% 0;
-            font-size: 36pt;
-        }
-
-        h2 {
-            padding: 10% 10% 5% 10%;
-            font-size: 32pt;
-        }
-
-        h3 {
-            padding: 5% 10% 5% 10%;
-            font-size: 24pt;
-        }
-
-        h4 {
-            padding: 5% 10% 2% 10%;
-            font-size: 20pt;
-        }
-
-        p {
-            padding: 10pt 10% 10pt 10%;
-        }
-
-        ul, ol {
-            padding: 10pt 10% 10pt 10%;
-            font-size: 14pt;
-            border-left: 5pt solid #444;
-        }
-
-        li {
-            padding: 5pt 0 5pt 0;
-        }
-
-        img:not(#icon):not(#home) {
-            margin-left: 20%;
-            margin-right: 20%;
-            width: 60%;
-            margin-bottom:
-        }
-
-        #icon {
-            position: relative;
-            display: inline;
-            float: center;
-            vertical-align: middle;
-            margin-top: 1%;
-            margin-right: 5pt;
-            height: 70%;
-        }
-
-        #home {
-            position: relative;
-            display: inline;
-            float: center;
-            vertical-align: middle;
-            margin-top: 1%;
-            margin-right: 10pt;
-            padding-right: 10pt;
-            border-right: 4pt solid #0083D6;
-            height: 70%;
-        }
-
-        blockquote>p>a {
-            font-style: italic;
-            font-size: 14pt;
-            padding: 10pt 0 25pt 0;
-            vertical-align: middle;
-            text-align: center;
-        }
-
-        blockquote>p {
-            font-style: italic;
-            font-size: 14pt;
-            padding: 10pt 0 10pt 0;
-            vertical-align: middle;
-            text-align: center;
+            margin: auto;
+            margin-top: -14px;
+            font-size: 16px;
+            float: right;
+            width: 625px;
         }
         a {
             color: black;
@@ -208,7 +61,7 @@
             text-decoration: underline;
         }
         .info {
-            border-bottom: 2px dashed #4682b4;
+            border-bottom: 2px dashed #ddd;
         }
         .note {
             font-size: 0.75em;
@@ -219,12 +72,19 @@
 </head>
 <body>
 
-<div class='header'>
-    <a href=""><img src="img/icon-home.png" id="home"></a>
-    <a href="https://instagram.com/dunno.cpp"><img src="img/inst.png" id="icon"> </a>
-    <a href="https://github.com/dunno-o/"><img src="img/icon-github.png" id="icon"> </a>
-    <a href="https://t.me/dunno_0"><img src="img/icon-telegram.png" id="icon"></a>
+<div id='all'>
+
+<div id='links'>
+
+<a href='https://t.me/dunno_0'>Telegram</a>
+<a href='https://instagram.com/dunno.cpp'>Instagram</a>
+<a href='https://github.com/dunno-o/'>GitHub</a>
+<a href='mailto:dunno_o@icloud.com'>Email</a>
+<a href='https://www.linkedin.com/in/artem-parfenov-b91150241/'>LinkedIn</a>
+
 </div>
+
+<div id="content">
 
 
 <div class="content">
@@ -245,10 +105,6 @@
 <p> If you want to hire me - this section is for you.</p>
 
 <p>Link to CV: <a href="cv.pdf">CV</a></p>
-
-<p><a href='https://www.linkedin.com/in/artem-parfenov-b91150241/'>LinkedIn </a></p>
-
-<p><a href="mailto:dunno_o@icloud.com">Email</a></p>
 
 <p><br>
 <hr color="4682b4">
@@ -272,8 +128,6 @@
   <p><br>
 <hr color="4682b4">
  </p>
-
-
 
 </body>
 </html>
